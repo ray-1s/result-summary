@@ -1,0 +1,154 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: hsl(252, 100%, 67%);
+}
+
+.card {
+  width: 375px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+
+.your-result {
+  background: linear-gradient(to bottom, hsl(241,81%,54%), hsl(252,100%,67%));
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+.your-result .title {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.score-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: hsla(256,72%,46%,1);
+  margin: 0 auto 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score-circle .score {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.score-circle .of {
+  font-size: 1rem;
+}
+
+.remark {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+
+.summary {
+  background-color: hsl(221,100%,96%);
+  padding: 2rem;
+}
+
+.summary h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: hsl(224,30%,27%);
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.summary-row .left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.summary-row .icon svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.summary-row .icon svg path {
+  stroke: currentColor;
+}
+
+
+.summary-row.reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+.summary-row.memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+.summary-row.verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+.summary-row.visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+
+.summary-row .score {
+  font-weight: 700;
+  color: hsl(224,30%,27%);
+}
+
+.summary-row:hover,
+.summary-row:focus {
+  background-color: rgba(0,0,0,0.05);
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 0 0 2px hsla(224,30%,27%,0.3);
+}
+
+
+.continue-btn {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(224,30%,27%);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.continue-btn:hover {
+  opacity: 0.8;
+}
